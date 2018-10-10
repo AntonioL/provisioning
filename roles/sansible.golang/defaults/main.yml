@@ -1,0 +1,7 @@
+---
+
+sansible_golang_base_url: http://golang.org/dl/
+sansible_golang_tarball: go1.6.linux-amd64.tar.gz
+sansible_golang_tarball_checksum: 5470eac05d273c74ff8bac7bef5bad0b5abbd1c4052efbdbc8db45332e836b0b
+sansible_golang_validate_certs: yes
+sansible_golang_workspace_user: ~
