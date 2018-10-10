@@ -1,0 +1,10 @@
+- src: gantsign.visual-studio-code
+
+- src: gantsign.visual-studio-code-extensions
+
+- src: geerlingguy.docker
+
+- src: geerlingguy.git
+
+- src: sansible.golang
+
