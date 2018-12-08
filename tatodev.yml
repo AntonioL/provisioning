@@ -29,9 +29,3 @@
                 - ms-python.python
                 - ms-vscode.cpptools
                 - ms-vscode.Go
-    tasks:
-    
-    - name: Install Python 3.6 (via APT), please revise this
-      apt:
-        - name: python3.6
-          state: latest
