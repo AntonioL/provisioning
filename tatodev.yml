@@ -15,9 +15,6 @@
       docker_users:
           - "{{ user }}"
 
-    - role: sansible.golang
-      sansible_golang_workspace_user: "{{ user }}" 
-
     - role: gantsign.visual-studio-code
       users:
       - username: "{{ user }}"
@@ -26,6 +23,16 @@
       users:
           - username: "{{ user }}"
             visual_studio_code_extensions:
+                - ms-vscode.csharp
                 - ms-python.python
                 - ms-vscode.cpptools
                 - ms-vscode.Go
+                - rust-lang.rust
+                - peterjausovec.vscode-docker
+
+    - role: naftulikay.rust-dev
+      rust_user: "{{ user }}"
+
+    - role: fubarhouse.golang
+      go_install_clean: true
+      go_version: 1.11.6

@@ -6,5 +6,6 @@
 
 - src: geerlingguy.git
 
-- src: sansible.golang
-
+- src: naftulikay.rust-dev
+ 
+- src: fubarhouse.golang
