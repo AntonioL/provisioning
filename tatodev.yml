@@ -35,4 +35,4 @@
 
     - role: fubarhouse.golang
       go_install_clean: true
-      go_version: 1.11.6
+      go_version: 1.12.2
