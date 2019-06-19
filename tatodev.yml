@@ -29,6 +29,7 @@
                 - ms-vscode.Go
                 - rust-lang.rust
                 - peterjausovec.vscode-docker
+                - vector-of-bool.cmake-tools
 
     - role: naftulikay.rust-dev
       rust_user: "{{ user }}"
@@ -36,3 +37,7 @@
     - role: fubarhouse.golang
       go_install_clean: true
       go_version: 1.12.2
+
+    - role: albanandrieu.cmake
+      cmake_enabled: true
+
