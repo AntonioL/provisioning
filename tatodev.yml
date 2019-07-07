@@ -28,8 +28,9 @@
                 - ms-vscode.cpptools
                 - ms-vscode.Go
                 - rust-lang.rust
-                - peterjausovec.vscode-docker
+                - ms-azuretools.vscode-docker
                 - vector-of-bool.cmake-tools
+                - ms-vscode-remote.remote-containers
 
     - role: naftulikay.rust-dev
       rust_user: "{{ user }}"
