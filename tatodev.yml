@@ -18,6 +18,8 @@
     - role: gantsign.visual-studio-code
       users:
       - username: "{{ user }}"
+      visual_studio_code_version: ''
+      visual_studio_code_build: insiders
 
     - role: gantsign.visual-studio-code-extensions
       users:
@@ -37,8 +39,8 @@
 
     - role: fubarhouse.golang
       go_install_clean: true
-      go_version: 1.12.2
+      go_version: 1.12.9
+      golang_shell_profile: "/home/{{ user }}/.profile"
 
     - role: albanandrieu.cmake
       cmake_enabled: true
-
