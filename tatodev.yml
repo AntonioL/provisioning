@@ -14,6 +14,9 @@
     - role: geerlingguy.docker
       docker_users:
           - "{{ user }}"
+      docker_package_state: latest
+      docker_install_compose: true
+      docker_compose_version: "1.26.0-rc3"
 
     - role: gantsign.visual-studio-code
       users:
@@ -25,13 +28,12 @@
       users:
           - username: "{{ user }}"
             visual_studio_code_extensions:
-                - ms-vscode.csharp
                 - ms-python.python
                 - ms-vscode.cpptools
                 - ms-vscode.Go
                 - rust-lang.rust
                 - ms-azuretools.vscode-docker
-                - vector-of-bool.cmake-tools
+                - ms-vscode.cmake-tools
                 - ms-vscode-remote.remote-containers
 
     - role: naftulikay.rust-dev
@@ -39,8 +41,9 @@
 
     - role: fubarhouse.golang
       go_install_clean: true
-      go_version: 1.12.9
+      go_version: 1.13.3
       golang_shell_profile: "/home/{{ user }}/.profile"
+      GOPATH: "/home/{{ user }}/go"
 
     - role: albanandrieu.cmake
       cmake_enabled: true
